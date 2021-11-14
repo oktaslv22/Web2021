@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
-    <title>TokoOnlineKami^^</title>
+    <title>Paris Premium ^^</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
 
@@ -32,9 +32,7 @@
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
-}
+
 
 .display-4 {
   font-size: 2.5rem;
@@ -67,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-scroller .nav-link {
-  padding-top: .75rem;
+  padding-top: 3.5rem;
   padding-bottom: .75rem;
   font-size: .875rem;
 }
@@ -159,7 +157,7 @@ h1, h2, h3, h4, h5, h6 {
         
     </main>
     <footer class="container">
-      <p>&copy; Himatuy 2021</p>
+      <p>&copy; 2021. Himatuy </p>
     </footer>
 
 
