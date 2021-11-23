@@ -1,7 +1,7 @@
 <?= $this->extend('layout')?>
 <?= $this->section('content')?>
-<!-- <h1>Testing</h1>
-<?= $data ?> -->
+<h1>Testing</h1>
+
 <main role="main">
 
 <!-- Main jumbotron for a primary marketing message or call to action -->
