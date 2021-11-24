@@ -52,7 +52,7 @@
                         <td height="25" colspan="2" align="top"> </td>
                     </tr>
                     <div class="m-t-20 m-b-40 p-b-40">
-            Not a member yet? Click <a href="<?= site_url('Auth/register')?>">here</a> to register.
+            Not a member yet? Click <a href="/Views/register">here</a> to register.
         </div>
             </table>
             </form>
@@ -74,4 +74,3 @@
     ];
    
 ?>
-       
