@@ -14,7 +14,7 @@
     </head>
     <body bgcolor="#cccccc"><br />
         <div align="center">
-            <form name="form-login" method="POST" action="login.php">
+            <form name="form-login" method="POST" action="/hello/isi.php">
                 <table width="310" border="0" cellpadding="0" cellspacing="0">
                     <tr bgcolor="blue">
                         <td height="25" colspan="2" align="center"><font color="#FFFFFF">Form Login</font>

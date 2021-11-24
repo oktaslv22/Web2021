@@ -27,11 +27,11 @@ class Auth extends BaseController
                 $user->username = $this->request->getPost('username');
                 $user->password = $this->request->getPost('password');
 
+                $user->role = 2;
                 $user->created_by = 0;
                 $user->created_date =("Y-m-d H:i:s");
-
                 $userModel->save($user);
-
+                // var_dump($data);
                 return view('login');
             }
 
