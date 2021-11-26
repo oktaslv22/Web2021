@@ -36,56 +36,61 @@ class Auth extends BaseController
             }
 
             $this->session->setFlashdata('errors', $errors);
+            
 
         }
         return view('register');
     }
 
     public function login(){
-        if($this->request->getPost())
-        {
-            $data = $this->request->getPost();
-            $validate = $this->validation->run($data, 'login');
-            $errors = $this->validation->getErrors();
-
-            if($errors)
+            if($this->request->getPost())
             {
-                return view('login');
-            }
-
-            $userModel = new \App\Models\UserModel();
-
-            $username = $this->request->getPost('username');
-            $password = $this->request->getPost('password');
-
-            $user = $userModel->where('username', $username)->first();
-
-            if($user){
-                if($user->password!==md5($password))
+                //lakukan validasi untuk data yang di post
+                $data = $this->request->getPost();
+                $validate = $this->validation->run($data, 'login');
+                $errors = $this->validation->getErrors();
+    
+                if($errors)
                 {
-                    $this->session->setFlashdata('errors', ['Password Salah']);
-                }else{
-                    $sessData = [
-                        'username' => $user->username,
-                        'id' => $user->id,
-                        'isLoggedIn' => TRUE
-                    ];
-
-                    $this->session->set($sessData);
-
-                    return redirect()->to(site_url('home'));
+                    return view('login');
                 }
-            }else{
-                $this->session->setFlashdata('errors', ['Username Tidak Ditemukan']);
+    
+                $userModel = new \App\Models\UserModel();
+    
+                $username = $this->request->getPost('username');
+                $password = $this->request->getPost('password');
+    
+                $user = $userModel->where('username', $username)->first();
+                if($user)
+                {
+                    $salt = $user->salt;
+                    if($user->password!==md5($salt.$password))
+                    {
+                        $this->session->setFlashdata('errors', ['Password Salah']);
+                    }else{
+                        $sessData = [
+                            'username' => $user->username,
+                            'id' => $user->id,
+                            'isLoggedIn' => TRUE
+                        ];
+    
+                        $this->session->set($sessData);
+    
+                        return redirect()->to(site_url('home/index'));
+                    }
+                }else{
+                    $this->session->setFlashdata('errors', ['User Tidak Ditemukan']);
+                }
             }
+            return view('login');
         }
-        return view('login');
-    }
+    
+        
 
     public function logout()
     {
         $this->session->destroy();
-        return redirect()->to(site_url('auth/login'));
+        return redirect()->to(site_url('Auth/login'));
     }
 }
 
