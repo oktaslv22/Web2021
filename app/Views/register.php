@@ -1,5 +1,99 @@
-<?= $this->extend('layout') ?>
-<?= $this->section('content') ?>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Paris Premium</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="<?= base_url('bootstrap-4.0.0/dist/css/bootstrap.min.css')?>" rel="stylesheet">
+	<style>
+		body {
+		background: #C5E1A5;
+		}
+		form {
+		width: 40%;
+		margin: 60px auto;
+		background: #efefef;
+		padding: 60px 120px 80px 120px;
+		text-align: center;
+		-webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+		box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+		}
+		label {
+		display: block;
+		position: relative;
+		margin: 40px 0px;
+		}
+		.form-group {
+		position: absolute;
+		top: -1.6em;
+		padding: 10px;
+		font-family: sans-serif;
+		font-size: .8em;
+		letter-spacing: 1px;
+		color: rgb(120,120,120);
+		transition: ease .3s;
+		}
+		.input {
+		width: 100%;
+		padding: 10px;
+		background: transparent;
+		border: none;
+		outline: none;
+		}
+
+		.line-box {
+		position: relative;
+		width: 100%;
+		height: 2px;
+		background: #BCBCBC;
+		}
+
+		.line {
+		position: absolute;
+		width: 0%;
+		height: 2px;
+		top: 0px;
+		left: 50%;
+		transform: translateX(-50%);
+		background: #8BC34A;
+		transition: ease .6s;
+		}
+
+		.input:focus + .line-box .line {
+		width: 100%;
+		}
+
+		.label-active {
+		top: -3em;
+		}
+
+		button {
+		display: inline-block;
+		padding: 12px 24px;
+		background: rgb(220,220,220);
+		font-weight: bold;
+		color: rgb(120,120,120);
+		border: none;
+		outline: none;
+		border-radius: 3px;
+		cursor: pointer;
+		transition: ease .3s;
+		}
+
+		button:hover {
+		background: #8BC34A;
+		color: #ffffff;
+		}
+		</style>
+
 	<?php
 		$username = [
 			'name' => 'username',
@@ -23,7 +117,9 @@
 		$session = session();
 		$errors = $session->getFlashdata('errors');
 	?>
-	<h1>Register Form</h1>
+
+	
+
 	<?php if($errors != null): ?>
 		<div class="alert alert-danger" role="alert">
 			<h4 class="alert-heading">Terjadi Kesalahan</h4>
@@ -36,25 +132,44 @@
 				?>
 			</p>
 		</div>
-	<?php endif ?>
+
+	
+		<?php endif ?>
 	<?= form_open('Auth/register') ?>
-		<div class="form-group">
-			<?= form_label("Username", "username") ?>
-			<?= form_input($username) ?>
+	<h1>Register Form</h1>
+            Create an account or <a href="/Auth/login">log in</a> <br><br>
+    	</div>
+	<label>
+		<p class="form-group">Username</p>
+			<input type="form_label" name="username" id="username" class="input">
+			<div class="line-box">
+      		<div class="line"></div>
 		</div>
-		<div class="form-group">
-			<?= form_label("Password", "password") ?>
-			<?= form_password($password) ?>
+	</label>
+
+	<label>
+		<p class="form-group">Password</p>
+		<input type="password" name="password" id="password" class="input">
+			<div class="line-box">
+      		<div class="line"></div>
+			</div>
 		</div>
-		<div class="form-group">
-			<?= form_label("Repeat Password", "repeatPassword") ?>
-			<?= form_password($repeatPassword) ?>
+	</label>
+
+	<label>
+		<p class="form-group">Repeat Password</p>
+		<input type="password" name="repeatPassword" id="repeatPassword" class="input">
+			<div class="line-box">
+      		<div class="line"></div>
+			</div>
 		</div>
+	</label>
+
+	<label>
 		<div class="text-right">
-			<?= form_submit('submit', 'Submit',['class'=>'btn btn-primary']) ?>
+			<?= form_submit('submit', 'Submit') ?>
 		</div>
-        <div class="m-t-20 m-b-40 p-b-40">
-            Sudah Punya Akun? Click <a href="/login">here</a> to login.
-        </div>
+	</label>
+	</form>
 	<?= form_close() ?>
-<?= $this->endSection() ?>
+	
