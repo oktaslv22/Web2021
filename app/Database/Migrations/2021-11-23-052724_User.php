@@ -21,8 +21,35 @@ class User extends Migration
             ],
             'password'=>[
                 'type'=>'TEXT',
+            ],
+            'salt'=>[
+                'type'=>'TEXT',
+            ],
+            'avatar'=>[
+                'type'=>'TEXT',
+                'null'=>TRUE,
+            ],
+            'role'=>[
+                'type'=>'TEXT',
+                'constraint'=>1,
+                'default'=>2,
+            ],
+            'created_by'=>[
+                'type'=>'INT',
+                'constraint'=>11,
+            ],
+            'created_date'=>[
+                'type'=>'DATETIME',
+            ],
+            'updated_by'=>[
+                'type'=>'INT',
+                'constraint'=>11,
+                'null'=>TRUE,
+            ],
+            'updated_date'=>[
+                'type'=>'DATETIME',
+                'null'=>TRUE,
             ]
-    
             ]);
 
             $this->forge->addKey('id',TRUE);

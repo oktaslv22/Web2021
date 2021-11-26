@@ -15,12 +15,12 @@ class Transaksi extends Migration
                 'unsigned'=>TRUE,
                 'auto_increment'=>TRUE,
             ],
-            'id_barang'=>[
+            'id_pembeli'=>[
                 'type'=>'INT',
                 'constraint'=>11,
                 'unsigned'=>TRUE,
             ],
-            'id_pembeli'=>[
+            'id_barang'=>[
                 'type'=>'INT',
                 'constraint'=>11,
                 'unsigned'=>TRUE,
@@ -32,13 +32,28 @@ class Transaksi extends Migration
             'total_harga'=>[
                 'type'=>'INT',
                 'constraint'=>11,
+            ],
+            'created_by'=>[
+                'type'=>'INT',
+                'constraint'=>11,
+            ],
+            'created_date'=>[
+                'type'=>'DATETIME',
+            ],
+            'updated_by'=>[
+                'type'=>'INT',
+                'constraint'=>11,
+                'null'=>TRUE,
+            ],
+            'updated_date'=>[
+                'type'=>'DATETIME',
+                'null'=>TRUE,
             ]
-    
             ]);
 
             $this->forge->addKey('id',TRUE);
-            $this->forge->addForeignKey('id_pembeli', 'user', 'id');
-            $this->forge->addForeignKey('id_barang', 'barang', 'id');
+            $this->forge->addForeignKey('id_pembeli','user','id');
+            $this->forge->addForeignKey('id_barang','barang','id');
             $this->forge->createTable('transaksi');
     }
 
