@@ -1,6 +1,5 @@
 <?= $this->extend('layout')?>
 <?= $this->section('content')?>
-<h1>Testing</h1>
 
 <main role="main">
 
@@ -8,6 +7,9 @@
 <br><br><div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
   <div class="container ">
     <h1 class="display-3">Welcome To Our Website!</h1>
+    <?php
+			echo "Hello, " .session()->get('username') ."!";
+		?>
     <p>Happy Shopping^^.</p>
     <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
   </div>
