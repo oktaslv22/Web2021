@@ -60,7 +60,10 @@ class Admin extends BaseController
 
     public function update()
     {
-
+        $BarangModel = model("BarangModel");
+		$data = $this->request->getPost();
+		$BarangModel->update($data);
+		return redirect()->to(base_url('/admin'));
     }
 
     public function delete()
