@@ -87,11 +87,11 @@ class Auth extends BaseController
     
         
 
-    public function logout()
-    {
-        $this->session->destroy();
-        return redirect()->to(site_url('Auth/login'));
-    }
+        public function logout(){
+            $array_items = array('username','id','isLoggedIn');
+            $this->session->remove($array_items);
+            return redirect()->to(base_url('home/index'));
+        }
 }
 
 ?>
