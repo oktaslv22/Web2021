@@ -58,17 +58,26 @@ class Admin extends BaseController
         return view('barang/create');
     }
 
-    public function update()
+    public function edit()
     {
-        $BarangModel = model("BarangModel");
-		$data = $this->request->getPost();
-		$BarangModel->update($data);
-		return redirect()->to(base_url('/admin'));
+        //$BarangModel = model("BarangModel");
+		//$data = $this->request->getPost();
+		//$BarangModel->edit($data);
+		return view('edit');
     }
 
     public function delete()
     {
-
+        $BarangModel = model("BarangModel");
+		$BarangModel->where()->delete();
+		return redirect()->to(base_url('/admin'));
     }
 
+    public function update()
+	{
+		$BarangModel = model("BarangModel");
+		$data = $this->request->getPost();
+		$BarangModel->update();
+		return redirect()->to(site_url('/admin'));
+	}
 }
