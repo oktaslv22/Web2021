@@ -17,7 +17,6 @@ class Barang extends Migration
             ],
             'nama'=>[
                 'type'=>'TEXT',
-                'constraint'=>100,
             ],
             'harga'=>[
                 'type'=>'INT',
@@ -29,23 +28,8 @@ class Barang extends Migration
             ],
             'gambar'=>[
                 'type'=>'TEXT',
-            ],
-            'created_by'=>[
-                'type'=>'INT',
-                'constraint'=>11,
-            ],
-            'created_date'=>[
-                'type'=>'DATETIME',
-            ],
-            'updated_by'=>[
-                'type'=>'INT',
-                'constraint'=>11,
-                'null'=>TRUE,
-            ],
-            'updated_date'=>[
-                'type'=>'DATETIME',
-                'null'=>TRUE,
             ]
+    
             ]);
 
             $this->forge->addKey('id',TRUE);
