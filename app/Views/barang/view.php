@@ -39,6 +39,7 @@
               <thead>
                 <tr>
                   <th class="whitespace-nowrap">No</th>
+                  <th class="whitespace-nowrap">IMAGE</th>
                   <th class="whitespace-nowrap">PRODUCT NAME</th>
                   <th class="text-center whitespace-nowrap">STOCK</th>
                   <th class="text-center whitespace-nowrap">PRICE</th>
@@ -50,6 +51,7 @@
                 <tr class="intro-x">  
                 <?php foreach($barangs as $index=>$barang): ?>
                   <td class="text"><?= ($index+1) ?></td>
+                  <td class="text-center"><?= $barang->gambar ?></td>                 
                   <td class="text-center"><?= $barang->nama ?></td>                 
                   <td class="text-center"><?= $barang->stok ?></td>
                   <td class="text-center"><?= $barang->harga ?></td>
