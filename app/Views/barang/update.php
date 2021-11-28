@@ -5,14 +5,14 @@
 $nama =[
     'name' => 'nama',
     'id' => 'nama',
-    'value' => null,
+    'value' => $barang->nama,
     'class' => 'input w-full border mt-2',
 ];
 
 $harga =[
     'name' => 'harga',
     'id' => 'harga',
-    'value' => null,
+    'value' => $barang->harga,
     'class' => 'input pr-16 w-full border col-span-4',
     'type' => 'number',
     'min' => 0,
@@ -21,7 +21,7 @@ $harga =[
 $stok =[
     'name' => 'stok',
     'id' => 'stok',
-    'value' => null,
+    'value' => $barang->stok,
     'class' => 'input pr-12 w-full border col-span-4',
     'type' => 'number',
     'min' => 0,
@@ -76,7 +76,7 @@ $submit =[
                 </div>
                 <div class="intro-y overflow-auto lg:overflow-visible mt-8 sm:mt-0">
                 <div class="intro-y box p-5">
-                <?= form_open_multipart('Admin/create') ?>
+                <?= form_open_multipart('Admin/update/'.$barang->id) ?>
                             <div>
                                 <label>Product Name</label>
                                 <?= form_input($nama) ?>
@@ -96,6 +96,7 @@ $submit =[
                                     <div class="absolute top-0 right-0 rounded-r px-4 h-full flex items-center justify-center bg-gray-100 dark:bg-dark-1 dark:border-dark-4 border text-gray-600">Rupiah</div>
                                 </div>
                             </div>
+                            <img class="img-fluid" alt="image" src="<?= base_url('uploads/'.$barang->gambar) ?>" />
                             <div class="mt-3">
                                 <label>Image</label>
                                 <div class="relative mt-2">

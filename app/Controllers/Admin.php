@@ -1,6 +1,8 @@
 <?php
 namespace App\Controllers;
 
+use App\Models\BarangModel;
+
 class Admin extends BaseController
 {
     public function __construct()
@@ -11,19 +13,24 @@ class Admin extends BaseController
     }
     public function index()
     {
-        return view('dashboard');
+        
+        $data=[
+            'title'=>"Dashboard",
+           
+        ];
+        echo view('dashboard');
     }
+    
+    
     public function view()
     {
-        $id = $this->request->uri->getSegment(3);
-
-        $barangModel = new \App\Models\BarangModel();
-
-        $barang = $barangModel->find($id);
-
-        return view('barang/view.php',[
-            'barang' => $barang,
-        ]);
+        $model = new BarangModel();
+        $barangs = $model->findAll();
+        $data=[
+            'title'=>"Data Barang",
+            'barangs'=>$barangs,
+        ];
+        echo view('barang/view', $data);
     }
 
     public function create()
@@ -58,26 +65,57 @@ class Admin extends BaseController
         return view('barang/create');
     }
 
-    public function edit()
-    {
-        //$BarangModel = model("BarangModel");
-		//$data = $this->request->getPost();
-		//$BarangModel->edit($data);
-		return view('edit');
-    }
+   
 
     public function delete()
-    {
-        $BarangModel = model("BarangModel");
-		$BarangModel->where()->delete();
-		return redirect()->to(base_url('/admin'));
-    }
+	{
+		$id = $this->request->uri->getSegment(3);
+
+		$modelBarang = new \App\Models\BarangModel();
+		$delete = $modelBarang->delete($id);
+
+		return redirect()->to(site_url('Admin/index'));
+	}
+
+   
 
     public function update()
 	{
-		$BarangModel = model("BarangModel");
-		$data = $this->request->getPost();
-		$BarangModel->update();
-		return redirect()->to(site_url('/admin'));
+		$id = $this->request->uri->getSegment(3);
+
+		$barangModel = new \App\Models\BarangModel();
+
+		$barang = $barangModel->find($id);
+
+		if($this->request->getPost())
+		{
+			$data = $this->request->getPost();
+			$this->validation->run($data, 'barangupdate');
+			$errors = $this->validation->getErrors();
+
+			if(!$errors)
+			{
+				$b = new \App\Entities\Barang();
+				$b->id = $id;
+				$b->fill($data);
+
+				if($this->request->getFile('gambar')->isValid()){
+					$b->gambar = $this->request->getFile('gambar');
+				}
+
+				$b->updated_by = $this->session->get('id');
+				$b->updated_date = date("Y-m-d H:i:s");
+
+				$barangModel->save($b);
+				
+				$segments = ['Admin','view',$id];
+
+				return redirect()->to(base_url($segments));
+			}
+		}
+
+		return view('barang/update',[
+			'barang' => $barang,
+		]);
 	}
 }
