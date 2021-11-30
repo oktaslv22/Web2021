@@ -8,4 +8,12 @@ class Home extends BaseController
     {
         return view('hello/isi');
     }
+    public function contactus()
+    {
+        return view('Views/contactus');
+    }
+    public function address()
+    {
+        return view('Views/address');
+    }
 }
