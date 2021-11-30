@@ -24,6 +24,8 @@ class Admin extends BaseController
     
     public function view()
     {
+        $id = $this->request->uri->getSegments(3);
+        
         $model = new BarangModel();
         $barangs = $model->findAll();
         $data=[
