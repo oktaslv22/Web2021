@@ -19,7 +19,7 @@
 <div class="nav-scroller py-1 mb-2">
         <nav class="nav d-flex justify-content-between">
           <a class="p-3 text-muted" href="/Home/index">Home</a>
-          <a class="p-3 text-muted" href="#">Products</a>
+          <a class="p-3 text-muted" href="/Home/products">Products</a>
           <a class="p-3 text-muted" href="/Home/address">Address</a>
           <a class="p-3 text-muted" href="#">About Us</a>
           <a class="p-3 text-muted" href="/Home/contactus">Contact Us</a>

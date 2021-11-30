@@ -16,4 +16,8 @@ class Home extends BaseController
     {
         return view('Views/address');
     }
+    public function products()
+    {
+        return view('Views/products');
+    }
 }
