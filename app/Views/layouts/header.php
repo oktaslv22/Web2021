@@ -56,9 +56,9 @@ License: You must have a valid license purchased only from themeforest(the above
   <!-- BEGIN: Side Menu -->
   <nav class="side-nav">
     <a href="#" class="intro-x flex items-center pl-5 pt-4">
-      <img alt="Midone Tailwind HTML Admin Template" class="w-6" src="<?= base_url('midone/dist/images/logo.svg');?>" />
+      <img alt="Midone Tailwind HTML Admin Template" class="w-6" src="/assets/images/logo.png">
       <span class="hidden xl:block text-white text-lg ml-3">
-        Mid<span class="font-medium">one</span>
+        <span class="font-medium">PARIS PREMIUM</span>
       </span>
     </a>
     <div class="side-nav__devider my-6"></div>
@@ -74,7 +74,7 @@ License: You must have a valid license purchased only from themeforest(the above
             <a href="javascript:;" class="side-menu">
               <div class="side-menu__icon"><i data-feather="edit"></i></div>
               <div class="side-menu__title">
-                Crud
+                CRUD
                 <div class="side-menu__sub-icon">
                   <i data-feather="chevron-down"></i>
                 </div>
@@ -112,4 +112,7 @@ License: You must have a valid license purchased only from themeforest(the above
     <script src="<?= base_url('midone/dist/js/app.js');?>"></script>
     <!-- END: JS Assets-->
   </body>
+  <footer class="container">
+      <p>&copy; 2021. Himatuy </p>
+    </footer>
 </html>
