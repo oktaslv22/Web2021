@@ -42,9 +42,35 @@
              <div class="col-sm-12 col-lg-4 my-3">
                <div class="card border-0">
                   <div class="card-body text-center">
-                    <a class="fa fa-instagram fa-5x mb-3" href="https://www.instagram.com/naadia.salsabila/"></a>
+                    <a class="fa fa-instagram fa-5x mb-3" href="https://www.instagram.com/nabilaa.ptr/"></a>
                     <h4 class="text-uppercase mb-7">Instagram</h4>
-                    <p>https://www.instagram.com/naadia.salsabila/</p>
+                    <p>https://www.instagram.com/nabilaa.ptr/</p>
+                  </div>
+                </div>
+             </div>
+             <div class="col-sm-12 col-lg-4 my-3">
+               <div class="card border-0">
+                  <div class="card-body text-center">
+                    <a class="fa fa-globe fa-5x mb-3" href="https://www.parispremium.com"></a>
+                    <h4 class="text-uppercase mb-7">Website</h4>
+                    <p>https://www.parispremium.com</p>
+                  </div>
+                </div>
+             </div>
+             <div class="col-sm-12 col-lg-4 my-3">
+               <div class="card border-0">
+                  <div class="card-body text-center">
+                    <a class="fa fa-twitter fa-5x mb-3" href="https://twitter.com/flufflydila"></a>
+                    <h4 class="text-uppercase mb-7">Twitter</h4>
+                    <p>https://twitter.com/flufflydila</p>
+                  </div>
+                </div>
+             </div><div class="col-sm-12 col-lg-4 my-3">
+               <div class="card border-0">
+                  <div class="card-body text-center">
+                    <a class="fa fa-facebook fa-5x mb-3" href="https://web.facebook.com/nadiasalsabila/"></a>
+                    <h4 class="text-uppercase mb-7">Facebook</h4>
+                    <p>https://web.facebook.com/nadiasalsabila/</p>
                   </div>
                 </div>
              </div>
