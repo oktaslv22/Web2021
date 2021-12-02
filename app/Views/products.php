@@ -37,14 +37,14 @@ h4{
 </head>
 <body>
 <section id="product">
-<br><br> 
+    <h3 class="text-center text-uppercase">Products</h3>
 <div class="container-fluid">
     <div class="row">
    
         <div class="col-lg-12 col- md-12 col-sm-12">
             <div class="row">
             <!--1 card-->
-                <div class="col=lg-4 col-md-4 col-sm-12 order-md-1">
+                <div class="col-lg-4 col-md-4 col-sm-12 order-md-1">
                     <div class="container block rounded-lg rounded-sm ">
                                                 <!--1st row--->
                         <div class="row">
@@ -62,7 +62,7 @@ h4{
                     </div>
                 </div>
                 <!--2nd card--->
-                <div class="col=lg-4 col-md-4 col-sm-12 order-md-2">
+                <div class="col-lg-4 col-md-4 col-sm-12 order-md-2">
                     <div class="container block rounded-lg rounded-sm">
                      <!--1st row--->
                         <div class="row">
@@ -80,7 +80,7 @@ h4{
                     </div>
                 </div>
                 <!--3rd card-->
-                 <div class="col=lg-4 col-md-4 col-sm-12 order-md-3">
+                 <div class="col-lg-4 col-md-4 col-sm-12 order-md-3">
                     <div class="container block rounded-lg rounded-sm">
                                                 <!--1st row--->
                         <div class="row">
