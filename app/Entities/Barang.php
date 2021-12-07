@@ -9,7 +9,7 @@ class Barang extends Entity
       $fileName = $file->getRandomName();
       $writePath = './uploads';
       $file->move($writePath, $fileName);
-      $this->attributes['gambar'] =$file;
+      $this->attributes['gambar'] =$fileName;
       return $this;
   }
 }
