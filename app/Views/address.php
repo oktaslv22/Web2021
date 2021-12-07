@@ -33,8 +33,8 @@
              <div class="col-sm-12 col-md-3 col-lg-3 my-3">
                <div class="card border-0">
                   <div class="card-body text-center">
-                    <i class="fa fa-map-marker fa-5x mb-3" aria-hidden="true"></i>
-                    <h4 class="text-uppercase mb-7"href="https://goo.gl/maps/ucSSLbMTDfexy7Vu7">Office Location</h4>
+                    <a class="fa fa-map-marker fa-5x mb-3" href="https://goo.gl/maps/ucSSLbMTDfexy7Vu7"></a>
+                    <h4 class="text-uppercase mb-7" >Office Location</h4>
                    <address>Perintis Kemerdekaan 21, Bandar Lampung</address>
                   </div>
                 </div>

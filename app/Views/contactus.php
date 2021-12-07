@@ -33,7 +33,7 @@
              <div class="col-sm-12 col-lg-4 my-3">
                <div class="card border-0">
                   <div class="card-body text-center">
-                    <i class="fa fa-phone fa-5x mb-3" aria-hidden="true"></i>
+                    <a class="fa fa-phone fa-5x mb-3" href="https://wa.me/+6283165852801"></a>
                     <h4 class="text-uppercase mb-7">WhatsApp</h4>
                     <p>https://wa.me/+6283165852801 (Okta Silvi)</p>
                   </div>
@@ -42,7 +42,7 @@
              <div class="col-sm-12 col-lg-4 my-3">
                <div class="card border-0">
                   <div class="card-body text-center">
-                    <i class="fa fa-instagram fa-5x mb-3" aria-hidden="true"></i>
+                    <a class="fa fa-instagram fa-5x mb-3" href="https://www.instagram.com/nabilaa.ptr/"></a>
                     <h4 class="text-uppercase mb-7">Instagram</h4>
                     <p>https://www.instagram.com/nabilaa.ptr/</p>
                   </div>
@@ -51,7 +51,7 @@
              <div class="col-sm-12 col-lg-4 my-3">
                <div class="card border-0">
                   <div class="card-body text-center">
-                    <i class="fa fa-globe fa-5x mb-3" aria-hidden="true"></i>
+                    <a class="fa fa-globe fa-5x mb-3" href="https://www.parispremium.com"></a>
                     <h4 class="text-uppercase mb-7">Website</h4>
                     <p>https://www.parispremium.com</p>
                   </div>
@@ -60,7 +60,7 @@
              <div class="col-sm-12 col-lg-4 my-3">
                <div class="card border-0">
                   <div class="card-body text-center">
-                    <i class="fa fa-twitter fa-5x mb-3" aria-hidden="true"></i>
+                    <a class="fa fa-twitter fa-5x mb-3" href="https://twitter.com/flufflydila"></a>
                     <h4 class="text-uppercase mb-7">Twitter</h4>
                     <p>https://twitter.com/flufflydila</p>
                   </div>
@@ -68,7 +68,7 @@
              </div><div class="col-sm-12 col-lg-4 my-3">
                <div class="card border-0">
                   <div class="card-body text-center">
-                    <i class="fa fa-facebook fa-5x mb-3" aria-hidden="true"></i>
+                    <a class="fa fa-facebook fa-5x mb-3" href="https://web.facebook.com/nadiasalsabila/"></a>
                     <h4 class="text-uppercase mb-7">Facebook</h4>
                     <p>https://web.facebook.com/nadiasalsabila/</p>
                   </div>
@@ -77,7 +77,7 @@
              <div class="col-sm-12 col-lg-4 my-3">
                <div class="card border-0">
                   <div class="card-body text-center">
-                    <i class="fa fa-envelope fa-5x mb-3" aria-hidden="true"></i>
+                    <a class="fa fa-envelope fa-5x mb-3" href="https://luluagustin999@gmail.com"></a>
                     <h4 class="text-uppercase mb-7">Email</h4>
                     <p>https://luluagustin999@gmail.com</p>
                   </div>

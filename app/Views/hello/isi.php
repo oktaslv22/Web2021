@@ -11,7 +11,7 @@
 			echo "Hello, " .session()->get('username') ."!";
 		?>
     <p>Happy Shopping^^.</p>
-    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+    <p><a class="btn btn-primary btn-lg" href="/Home/products" role="button">Learn more &raquo;</a></p>
   </div>
 </div>
 
@@ -21,21 +21,21 @@
         <div class="row">
           <div class="col-lg-4">
             <img class="rounded-circle" src="/assets/images/Gambar1.jpeg" alt="Generic placeholder image" width="140" height="140">
-            <h2>Product1</h2>
-            <p>Penjelasan</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            <h2>Milo Muda</h2>
+            <!-- <p>Penjelasan</p> -->
+            <p><a class="btn btn-secondary" href="/Home/products" role="button">View details &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
             <img class="rounded-circle" src="/assets/images/Gambar2.jpeg" alt="Generic placeholder image" width="140" height="140">
-            <h2>Product2</h2>
-            <p>Penjelasan</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            <h2>Army</h2>
+            <!-- <p>Penjelasan</p> -->
+            <p><a class="btn btn-secondary" href="/Home/products" role="button">View details &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
             <img class="rounded-circle" src="/assets/images/Gambar3.jpeg" alt="Generic placeholder image" width="140" height="140">
-            <h2>Product3</h2>
-            <p>Penjelasan</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            <h2>Coral</h2>
+            <!-- <p>Penjelasan</p> -->
+            <p><a class="btn btn-secondary" href="/Home/products" role="button">View details &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
 
