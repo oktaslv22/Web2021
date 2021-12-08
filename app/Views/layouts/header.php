@@ -64,7 +64,7 @@ License: You must have a valid license purchased only from themeforest(the above
     <div class="side-nav__devider my-6"></div>
     <ul>
       <li>
-        <a href="index.html" class="side-menu side-menu">
+        <a href="#" class="side-menu side-menu">
           <div class="side-menu__icon"><i data-feather="home"></i></div>
           <div class="side-menu__title">Dashboard</div>
         </a>
@@ -82,7 +82,7 @@ License: You must have a valid license purchased only from themeforest(the above
             </a>
             <ul class="">
               <li>
-                <a href="<?= site_url('Admin/view')?>" class="side-menu">
+                <a href="<?= site_url('Admin/view')?>" class="side-menu side-menu--active">
                   <div class="side-menu__icon">
                     <i data-feather="activity"></i>
                   </div>
