@@ -101,6 +101,12 @@ License: You must have a valid license purchased only from themeforest(the above
           </li>
     </ul>
     </li>
+    <li>
+        <a href="<?=base_url('Auth/logout');?>" class="side-menu side-menu">
+          <div class="side-menu__icon"><i data-feather="log-out"></i></div>
+          <div class="side-menu__title">Log Out</div>
+        </a>
+      </li>
     </ul>
   </nav>
   <!-- END: Side Menu -->
