@@ -14,11 +14,15 @@ class Admin extends BaseController
     public function index()
     {
         
+        $id = $this->request->uri->getSegments(3);
+        
+        $model = new BarangModel();
+        $barangs = $model->findAll();
         $data=[
-            'title'=>"Dashboard",
-           
+            'title'=>"Data Barang",
+            'barangs'=>$barangs,
         ];
-        echo view('dashboard');
+        echo view('dashboard', $data);
     }
     
     
@@ -33,6 +37,18 @@ class Admin extends BaseController
             'barangs'=>$barangs,
         ];
         echo view('barang/view', $data);
+    }
+    public function gambar()
+    {
+        $id = $this->request->uri->getSegments(3);
+        
+        $model = new BarangModel();
+        $barangs = $model->findAll();
+        $data=[
+            'title'=>"Data Barang",
+            'barangs'=>$barangs,
+        ];
+        echo view('products', $data);
     }
 
     public function create()

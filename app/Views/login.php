@@ -151,7 +151,7 @@
 <?= form_open('Auth/login') ?>
     <div id="login">
     <h1>Login Form</h1>
-            Not a member yet? Click <a href="<?= site_url('Auth/register')?>">here</a> to register.
+             This Form is Only for Admin! <!-- <a href="<?= site_url('Auth/register')?>">here</a> to register. -->
     	</div>
         <form id="login-form" class="form" action="" method="post">
         <label>
@@ -180,5 +180,3 @@
         <?= form_close() ?>
    
 </html>
-
-       

@@ -8,8 +8,7 @@
             <a class="blog-header-logo text-dark" href="#">Paris Premium</a>
           </div>
           <div class="col-4 d-flex justify-content-end align-items-center">
-            <a class="btn btn-sm btn-outline-dark" href="<?= site_url('Auth/login')?>">Sign In</a>
-            <a class="btn btn-sm btn-outline-dark" href="<?=base_url('Auth/logout');?>">Sign Out</a>
+            <a class="btn btn-sm btn-outline-dark" href="<?= site_url('Auth/login')?>">Log in</a>
           </div>
         </div>
 </header>

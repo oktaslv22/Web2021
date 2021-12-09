@@ -19,7 +19,7 @@ class Filters extends BaseConfig
         'csrf'     => CSRF::class,
         'toolbar'  => DebugToolbar::class,
         'honeypot' => Honeypot::class,
-        'auth' => \App\Filters\Auth::class,
+        //'auth' => \App\Filters\Auth::class,
     ];
 
     /**
@@ -32,7 +32,7 @@ class Filters extends BaseConfig
         'before' => [
             // 'honeypot',
             // 'csrf',
-            'auth' =>['except'=>'auth/*']
+            //'auth' =>['except'=>'auth/*']
         ],
         'after' => [
             'toolbar',
@@ -56,7 +56,7 @@ class Filters extends BaseConfig
      * before or after URI patterns.
      *
      * Example:
-     * 'isLoggedIn' => ['before' => ['account/*', 'profiles/*']]
+     * 'isLoggedIn' => ['before' => ['account/', 'profiles/']]
      *
      * @var array
      */
