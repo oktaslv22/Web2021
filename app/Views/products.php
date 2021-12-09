@@ -25,8 +25,8 @@
 <table class="table table-bordered">
   <thead>
     <tr>
-      <th scope="col">Gambar</th>
-      <th scope="col">Keterangan</th>
+      <th scope="col"><center>Gambar</center></th>
+      <th scope="col"><center>Keterangan</center></th>
     </tr>
   </thead>
   <tbody>
