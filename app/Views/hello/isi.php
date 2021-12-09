@@ -8,7 +8,7 @@
   <div class="container ">
     <h1 class="display-3">Welcome To Our Website!</h1>
     <?php
-			echo "Hello, " .session()->get('username') ."!";
+			echo "Hello, Cust! ";
 		?>
     <p>Happy Shopping^^.</p>
     <p><a class="btn btn-primary btn-lg" href="/Home/products" role="button">Learn more &raquo;</a></p>
