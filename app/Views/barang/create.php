@@ -78,7 +78,7 @@ $submit =[
                 <div class="intro-y box p-5">
                 <?= form_open_multipart('Admin/create') ?>
                             <div>
-                                <label>Colour</label>
+                                <label>Product Name</label>
                                 <?= form_input($nama) ?>
                             </div>
                             <div class="mt-3">
